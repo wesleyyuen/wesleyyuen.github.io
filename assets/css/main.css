@@ -3685,14 +3685,14 @@ input, select, textarea {
 			background-size: 100% 100%;
 			content: '';
 			display: block;
-			height: 3em;
+			height: 5em;
 			position: absolute;
 			width: 100%;
 		}
 
 		.wrapper:before {
 			left: 0;
-			top: -3em;
+			top: -5em;
 		}
 
 		.wrapper:after {
@@ -3700,7 +3700,7 @@ input, select, textarea {
 			-webkit-transform: scaleY(-1);
 			-ms-transform: scaleY(-1);
 			transform: scaleY(-1);
-			bottom: -3em;
+			bottom: -5em;
 			left: 0;
 		}
 
@@ -3719,13 +3719,13 @@ input, select, textarea {
 		}
 
 		.wrapper .inner {
-			padding: 3em 0 1em 0 ;
+			padding: 2em 0 2em 0 ;
 			margin: 0 auto;
 			width: 70em;
 		}
 
 		.wrapper.title:before {
-			height: 3em;
+			height: 5em;
 		}
 
 		.wrapper.style2 {
