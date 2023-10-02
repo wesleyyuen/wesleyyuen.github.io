@@ -37,10 +37,6 @@ body {
 	line-height: 1;
 }
 
-p, h3 {
-	font-size: x-large;
-}
-
 ol, ul {
 	list-style: none;
 }
@@ -133,11 +129,12 @@ input, select, textarea {
 	.flexbox {
 		display: flex;
 		flex-wrap: wrap;
-		width:100%
+		width:100%;
+		margin: 0em 0em 3em 0em;
 	}
 	.flexitem {
 		justify-content: flex-start;
-		margin: 1em 0 0 1em;
+		margin: 1em 1em 0em 0em;
 		vertical-align: middle;	
 	}
 
@@ -295,8 +292,12 @@ input, select, textarea {
 			border-bottom: solid 2px rgba(255, 255, 255, 0.125);
 		}
 
+		h1.larger, h2.larger, h3.larger, h4.larger, h5.larger, h6.larger, p.larger {
+			font-size: x-large;
+		}
+
 		h1.smaller, h2.smaller, h3.smaller, h4.smaller, h5.smaller, h6.smaller, p.smaller {
-			font-size: xx-large;
+			font-size: x-small;
 		}
 
 	h2 {

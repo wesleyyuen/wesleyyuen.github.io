@@ -46,7 +46,6 @@
 							<div class="inner">
 								<h2 class="major">Associate Game Engineer - Unity, PlayStudios Asia</h2>
                                 <p><a href="https://www.playstudios.com" target="_blank"><b>Playstudios</b></a> is a game studio focused on creating mobile games, mostly social casino games, with the PLAYAWARDS program, which allows player to earn points and spend on real life rewards.</p>
-                                <div>
                                     Hands-on Experience with:
                                     <ul>
                                         <li>Unity/C#</li>
@@ -57,13 +56,21 @@
 										<li>Python - Data Visualization</li>
 										<li>Jenkins</li>
                                     </ul>
-                                </div>
-								
+								<div class="flexbox">
+									<div class="flexitem">
+										<a href="#mvmx" class="button scrolly">About MyVegas Slots</a>
+									</div>
+									<div class="flexitem">
+										<a href="#feature" class="button scrolly">Feature Development</a>
+									</div>
+									<div class="flexitem">
+										<a href="#tools" class="button scrolly">Tools Development</a>
+									</div>
+									<div class="flexitem">
+										<a href="#liveops" class="button scrolly">LiveOps Event</a>
+									</div>
+								</div>
 								<ul class="actions">
-                                    <li><a href="#mvmx" class="button scrolly">About MyVegas Slots</a></li>
-                                    <li><a href="#feature" class="button scrolly">Feature Development</a></li>
-                                    <li><a href="#tools" class="button scrolly">Twitch Integration</a></li>
-                                    <li><a href="#event" class="button scrolly">VTuber Studio</a></li>
                                 </ul>
 							</div>
 						</section>
@@ -79,7 +86,7 @@
 									</div>
 									<div class="col-6 col-12-small">
 										<div class="content">
-											<h1 class="smaller">MyVEGAS Slots</h1>
+											<h1 class="larger major">MyVEGAS Slots</h1>
 											<p>
 												<a href="https://www.playstudios.com/myvegas-slots/" target="_blank"><b>MyVEGAS Slots</b></a> is a social casino mobile game that offers a wide selection of slots games.
 												Various in-game features e.g. events, daily mission and album, allow players to earn points which can then be redeemed as real-world rewards via the PLAYAWARDS program.
@@ -92,7 +99,6 @@
 										</div>
 									</div>
 								</div>
-								
 							</div>
 						</section>
 						
@@ -107,33 +113,61 @@
 							<section id="prioritysales" class="wrapper spotlight style2">
 								<div class="inner">
 									<div class="content">
-										<h1 class="smaller">Prioritized Sales System</h1>
+										<h1 class="larger major">Prioritized Sales System</h1>
 										<p>
 											Designed and implemented a <b>sales blocker displaying system</b> that show sales blockers depending on <b>configurable conditions</b> e.g. priority, available duration and <b>meta-parameters</b> e.g. player spending pattern, level and chip balance<br>
 											This added layer of configurability enabled the product team to <b>target certain players with specific sales offers</b>, and players are more likely to purchase offers suggested by this system
 										</p>
 									</div>
 								</div>
-							</section>
+							<!-- </section>
 
-							<section id="inventory" class="wrapper alt spotlight style3">
+							<section id="inventory" class="wrapper alt spotlight style3"> -->
 								<div class="inner">
 									<div class="content">
-										<h1 class="smaller">Inventory System</h1>
+										<h1 class="larger major">Inventory System</h1>
 										<p>
 											Designed and implemented scalable in-game inventory that allows items and currency awards player earned from events to be stored and consumed later.<br>
 											It is designed with <b>extendability</b> in mind to allow future or more complex awards types to be supported passively by the inventory system
 										</p>
 									</div>
 								</div>
-							</section>
+							<!-- </section>
 
-							<section id="seasonpass" class="wrapper spotlight style4">
+							<section id="seasonpass" class="wrapper spotlight style4"> -->
 								<div class="inner">
 									<div class="content">
-										<h1 class="smaller">Season Pass</h1>
+										<h1 class="larger major">Season Pass</h1>
 										<p>
-											Implemented a typical "Free-mium" season pass system
+											Implemented a <b>"Free-mium" season pass system</b> consisting of a free and premium tier that unlock awards with progression. Progression an be boosted via a purchase.<br>
+											It is designed to be <b>configurable</b> in terms of number of nodes, award types and duration, allowing the product team to finetune the parameters according to the performance data
+										</p>
+									</div>
+								</div>
+							<!-- </section>
+
+							<section id="widget" class="wrapper alt spotlight style5"> -->
+								<div class="inner">
+									<div class="content">
+										<h1 class="larger major">Scrollable Widget Panel</h1>
+										<p>
+											Implemented a centralized system for LiveOps events to display their event widget, allowing more widgets, and thus events to be run at the same time<br>
+											Implemented an <b>auto-focusing feature</b> that scrolls to and highlights the corresponding widget when players make progress in the event
+										</p>
+									</div>
+								</div>
+							<!-- </section>
+
+							<section id="tournament" class="wrapper spotlight style6"> -->
+								<div class="inner">
+									<div class="content">
+										<h1 class="larger major">Tournament</h1>
+										<p>
+											Designed and partially implemented a tournament system layer that consists of:
+											<ul>
+												<li>Backend connecting to an existing internal tournament service, providing logic for tournament room distribution and leaderboard calculations</li>
+												<li>Frontend displaying tournament events and leaderboard, with <b>fetching calls optimized</b> and spread out to <b>reduce loading time by half</b></li>
+											</ul>
 										</p>
 									</div>
 								</div>
@@ -144,20 +178,86 @@
 						<section id="tools">
 							<section id="tools-title" class="wrapper alt style1 title">
 								<div class="inner">
-									<h2>Work Experience</h2>
+									<h2>Tools Development</h2>
 								</div>
 							</section>
 
-							<section id="inventory" class="wrapper spotlight style2">
+							<section id="hyperlite" class="wrapper spotlight style2">
 								<div class="inner">
-									<a class="image"><img src="compositing.png" alt="" /></a>
 									<div class="content">
-										<h2>Digital Media Compositing Plugin (In Development)</h2>
+										<h1 class="larger major">Custom LiveOps Event Schedulers</h1>
 										<p>
-											Native Media Compositing in Unreal Engine suffers from rendering artifacts that can undermine the immersiveness of the scene<br><br>
-											We are developing an Unreal Engine plugin that allows user to composite their media, be it images or videos, cleanly and without noticable artifacts
+											Created a scheduling prototype in <b>Google Sheet using TypeScript/AppScript</b> that allows product team to reschedule upcoming in-game events and pushing to internal source control to be published to production
 										</p>
-										<!-- <a href="#" class="special">More Details</a> -->
+										<p>
+											Extending the prototype, created a <b>drag-and-drop internal website with React.js/TypeScript</b> that allows product team to configure the look of the in-game lobby/dialogues<br>
+											The setup is then processed by a <b>lightweight backend in .NET/C#</b> to generate corresponding JSON configs, before pushing the updated configs to the internal source control (then to production)
+										</p>
+									</div>
+								</div>
+							<!-- </section> -->
+
+							<!-- <section id="python" class="wrapper alt spotlight style3"> -->
+								<div class="inner">
+									<div class="content">
+										<h1 class="larger major">Schedule Visualization</h1>
+										<p>
+											Created a <b>python script in Google Collab</b> that generates a timeline visualizing the schedule of upcoming in-game events, allowing the product team to easily spot any potential problemetic conflicts or overlaps beforehand
+										</p>
+									</div>
+								</div>
+							<!-- </section> -->
+
+							<!-- <section id="vscode" class="wrapper alt spotlight style3"> -->
+								<div class="inner">
+									<div class="content">
+										<h1 class="larger major">Internal VSCode Extension</h1>
+										<p>
+											Implemented <b>additional functionalities</b> e.g. Automation of JSON config clean-up and pushing to internal source control
+										</p>
+									</div>
+								</div>
+							</section>
+						</section>
+
+						<!-- LiveOps -->
+						<section id="liveops">
+							<section id="tools-title" class="wrapper alt style1 title">
+								<div class="inner">
+									<h2>LiveOps Events</h2>
+								</div>
+							</section>
+
+							<section id="events" class="wrapper spotlight style2">
+								<div class="inner">
+									<div class="content">
+										<p>
+											Implemented the following popular LiveOps events in Lua and revamped events for launches of new slot games:
+										</p>
+										<div class="box alt">
+											<div class="row gtr-uniform">
+												<div class="col-4">
+													<h1 style="text-align: center;">Spin And Win</h1>
+													<span class="image fit"><img src="spinandwin.jpeg" alt="" /></span>
+												</div>
+												<div class="col-4">
+													<h1 style="text-align: center;">Multi-Challenge</h1>
+													<span class="image fit"><img src="multichallenge.jpeg" alt="" /></span>
+												</div>
+												<div class="col-4">
+													<h1 style="text-align: center;">Winning Streak</h1>
+													<span class="image fit"><img src="winningstreak.jpeg" alt="" /></span>
+												</div>
+												<div class="col-4">
+													<h1 style="text-align: center;">Vault Rush</h1>
+													<span class="image fit"><img src="vaultrush.jpeg" alt="" /></span>
+												</div>
+												<div class="col-4">
+													<h1 style="text-align: center;">Rocket Race</h1>
+													<span class="image fit"><img src="rocketrace.jpeg" alt="" /></span>
+												</div>
+											</div>
+										</div>
 									</div>
 								</div>
 							</section>
