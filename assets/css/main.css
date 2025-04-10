@@ -306,6 +306,10 @@ input, select, textarea {
 			font-size: x-large;
 		}
 
+		h1.largest, h2.largest, h3.largest, h4.largest, h5.largest, h6.largest, p.largest {
+			font-size: xx-large;
+		}
+
 		h1.smaller, h2.smaller, h3.smaller, h4.smaller, h5.smaller, h6.smaller, p.smaller {
 			font-size: x-small;
 		}
@@ -2454,6 +2458,12 @@ input, select, textarea {
 		position: relative;
 	}
 
+	
+		.image video {
+			border-radius: 5px;
+			display: block;
+		}
+
 		.image img {
 			border-radius: 5px;
 			display: block;
@@ -4238,6 +4248,23 @@ input, select, textarea {
 		width: 90%;
 		display: block;
 		margin: 0 auto;
+		border-radius: 15px;
+		border: 2px solid #e2e2e2;
+	}
+
+	.image-container video {
+		width: 90%;
+		display: block;
+		margin: 0 auto;
+		border-radius: 15px;
+		border: 2px solid #e2e2e2;
+	}
+
+	.image-container figcaption {
+		width: 90%;
+		display: block;
+		margin: 0 auto;
+		margin-top: 5px;
 	}
 
 	.icon-container {
