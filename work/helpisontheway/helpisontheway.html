@@ -92,34 +92,19 @@
 								<div class="content">
 									<h1 class="largest major">Rapid Prototyping</h1>
 									<p>
-										Native Media Compositing in Unreal Engine suffers from rendering artifacts that can undermine the immersiveness of the scene<br><br>
-										We are developing an Unreal Engine plugin that allows user to composite their media, be it images or videos, cleanly and without noticable artifacts
 									</p>
 								</div>
 							</div>
 						</section>
 
-						<!-- Twitch -->
+						<!-- State machine -->
 						<section id="statemachine" class="wrapper alt spotlight style2">
 							<div class="inner">
 								<div class="content">
 									<h1 class="largest major">State Machine</h1>
 									<p>
-										We are developing an Unreal Engine plugin that allows streamers to connect Twitch functions, like Chat, Bits and Subscriptions, to their Unreal scene objects
 									</p>
-									<div class="row">
-										<div class="col-6 col-12-small">
-											<div class="container">
-												<iframe
-												src="https://www.youtube.com/embed/ZPI4DYqRxRY?start=290&end=325" class="video" allowfullscreen></iframe>
-											</div>
-										</div>
-										<div class="col-6 col-12-small">
-											<p> ← In VTuber Studio, we used a prototype version of the plugin to create an NPC that follows the camera around and shows the latest chat message above its head</p>
-										</div>
-									</div>
 								</div>
-								
 							</div>
 						</section>
 
@@ -131,23 +116,92 @@
 							</div>
 						</section>
 						<section class="wrapper alt spotlight style3">
-							<div class="inner">
+							<div class="inner" style="text-align: left;">
 								<div class="content">
-									<h1 class="largest major">State Machine</h1>
+									<h1 class="largest major">Shaders and VFX</h1>
 									<p>
-										We are developing an Unreal Engine plugin that allows streamers to connect Twitch functions, like Chat, Bits and Subscriptions, to their Unreal scene objects
+										Not only do shaders and VFX add to the immersiveness of the game world, they also provide immediate visual feedback that works along other feedback systems, to ensure players understands the result of their actions. 
+									</p>
+									<p>
+										Implemented using Unity's ShaderGraph, Visual Effect Graph and EmberGen
 									</p>
 									<div class="row">
 										<div class="col-6 col-12-small">
-											<div class="container">
-												<iframe
-												src="https://www.youtube.com/embed/ZPI4DYqRxRY?start=290&end=325" class="video" allowfullscreen></iframe>
+											<div class="image-container">
+												<video autoplay height=400px loop muted>
+													<source src="rocketSequence.mp4" type="video/mp4">
+													Your browser does not support the video tag.
+												</video>
+												<figcaption>Implemented <b>rocket exhaust</b>, <b>liquid nitrogen</b>, <b>sparks</b> and <b>smoke</b> VFX with <b>EmberGen</b> for the rocket sequence</figcaption>
 											</div>
 										</div>
 										<div class="col-6 col-12-small">
-											<p> ← In VTuber Studio, we used a prototype version of the plugin to create an NPC that follows the camera around and shows the latest chat message above its head</p>
+											<div class="image-container">
+												<video autoplay height=400px loop muted>
+													<source src="cameraGlitch.mp4" type="video/mp4">
+													Your browser does not support the video tag.
+												</video>
+												<figcaption>Implemented custom pass shader for camera feed transition effect</figcaption>
+											</div>
+										</div>
+										<div class="col-6 col-12-small">
+											<div class="image-container">
+												<video autoplay height=400px loop muted>
+													<source src="crankloop.mp4" type="video/mp4">
+													Your browser does not support the video tag.
+												</video>
+												<figcaption>Implemented <b>sparks</b> and <b>electricity</b> VFX for the crank</figcaption>
+											</div>
+										</div>
+
+										<div class="col-6 col-12-small">
+											<div class="image-container">
+												<video autoplay height=400px loop muted>
+													<source src="bellows.mp4" type="video/mp4">
+													Your browser does not support the video tag.
+												</video>
+												<figcaption>Implemented <b>air puffs</b> and <b>sparks</b> VFX for the bellows</figcaption>
+											</div>
 										</div>
 									</div>
+								</div>
+								
+							</div>
+						</section>
+
+						<section class="wrapper spotlight style4">
+							<div class="inner" style="text-align: left;">
+								<div class="content">
+									<h1 class="largest major">Narrative Animations</h1>
+									<p>
+										The purposes of these cinematics are to both convey the narrative and the overall tone of the game, mostly without dialogues. Therefore, I try to make sure the animation, at the very least align with the narrative and tone, if not adding more to them.
+									</p>
+									<p>
+										For example having multiple layers of door shutting in front of Kassandra adds to the world-building of the corporation and how the higher ups are treated differently. It also brings a slight humorous tone to the end of the cinematics, and the final shot links perfectly to the gameplay (match cut)
+									</p>
+									<div class="row">
+										<div class="col-6 col-12-small">
+											<div class="image-container">
+												<video autoplay height=400px loop muted>
+													<source src="intro.mp4" type="video/mp4">
+													Your browser does not support the video tag.
+												</video>
+												<figcaption>Intro Cinematics</figcaption>
+											</div>
+										</div>
+										<div class="col-6 col-12-small">
+											<div class="image-container">
+												<video autoplay height=400px loop muted>
+													<source src="outro.mp4" type="video/mp4">
+													Your browser does not support the video tag.
+												</video>
+												<figcaption>Outro Cinematics</figcaption>
+											</div>
+										</div>
+									</div>
+									<p style="padding-top: 2em;">
+										Amazing 2D Art by <a href="https://www.artstation.com/the36thguillotine" target="_blank">Evan Oldham</a>
+									</p>
 								</div>
 								
 							</div>
