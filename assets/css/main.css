@@ -93,8 +93,83 @@ input, select, textarea {
     transform: scale(1.5);
 	-moz-transform: scale(1.5);
     -webkit-transform: scale(1.5);
-	/* border: 5px solid #ffffff; */
 }
+
+/* Gallery */
+.gallery-container {
+	overflow: scroll;
+	white-space: nowrap;
+}
+
+.fadeMask {
+	mask-image: linear-gradient(to right, transparent, white 15%, white 85%, transparent);
+  }
+
+.gallery-container article {
+	padding: 10px;
+}
+
+.gallery-container article {
+	padding: 1.75em 1.75em 0.1em 1.75em ;
+	background-color: #353849;
+	border-radius: 5px;
+	margin: 1.5em 3em 1.5em 0;
+	width: calc(50% - 1.5em);
+}
+
+	.gallery-container article .image {
+		border-radius: 5px 5px 0 0;
+		display: block;
+		margin-bottom: 1.75em;
+		margin-left: -1.75em;
+		margin-top: -1.75em;
+		position: relative;
+		width: calc(100% + 3.5em);
+	}
+
+		.gallery-container article .image img {
+			border-radius: 5px 5px 0 0;
+			width: 100%;
+		}
+
+		@media screen and (max-width: 980px) {
+
+			.gallery-container article {
+				margin: 1em 2em 1em 0;
+				width: calc(50% - 1em);
+			}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			.gallery-container article {
+				padding: 1.5em 1.5em 0.1em 1.5em ;
+				margin: 0.875em 1.75em 0.875em 0;
+				width: calc(50% - 0.875em - 1px);
+			}
+
+				.gallery-container article .image {
+					margin-bottom: 1.5em;
+					margin-left: -1.5em;
+					margin-top: -1.5em;
+					width: calc(100% + 3em);
+				}
+
+		}
+
+		@media screen and (max-width: 480px) {
+
+			.gallery-container {
+				display: block;
+			}
+
+				.gallery-container article {
+					width: 100%;
+					margin: 0 0 2em 0 !important;
+				}
+
+		}
 
 /* The Modal (background) */
 .modal {
@@ -191,7 +266,7 @@ input, select, textarea {
 		display: flex;
 		flex-wrap: wrap;
 		width:100%;
-		margin: 1em 0em 3em 0em;
+		/* margin: 1em 0em 3em 0em; */
 	}
 	.flexitem {
 		justify-content: flex-start;
@@ -3928,7 +4003,7 @@ input, select, textarea {
 			}
 
 			.wrapper.spotlight .image {
-				border-radius: 50%;
+				border-radius: 10%;
 				margin: 0 3em 2em 0;
 				width: 22em;
 				overflow: hidden;
@@ -3936,7 +4011,7 @@ input, select, textarea {
 			}
 
 				.wrapper.spotlight .image img {
-					border-radius: 50%;
+					border-radius: 10%;
 					width: 100%;
 				}
 
