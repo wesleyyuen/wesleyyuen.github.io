@@ -76,9 +76,9 @@
 									<div class="flexitem">
 										<a href="#nis" class="button scrolly">Non-interactive Sequences</a>
 									</div>
-									<div class="flexitem">
+									<!-- <div class="flexitem">
 										<a href="#statemachine" class="button scrolly">State Machine</a>
-									</div>
+									</div> -->
 									<div class="flexitem">
 										<a href="#coolstuff" class="button scrolly">Other cool stuff!</a>
 									</div>
@@ -90,30 +90,51 @@
 						
 						<!-- Prototyping -->
 						<section id="prototyping" class="wrapper spotlight style">
-							<div class="inner">
-								<a class="image"><img src="compositing.png" alt="" /></a>
+							<div class="inner" style="text-align: left;">
 								<div class="content">
 									<h1 class="largest major">Rapid Prototyping</h1>
-									<p>
-									</p>
+									<div class="row">
+										<div class="col-4 col-12-small" style="padding-right: 2em;">
+											<h3 class="major">The Problem</h3>
+											<p>Our game consists of many unique and wacky mechanics, many of them are unproven in terms of game feel.</p>
+											<p>For example, how should the player switch views between the monitors and the rest of the terminal? While we intend for the player to look back and forth as part of our gameplay pillar of "Divided Attention", the monitors are the only way to interface with Conor and players might feel cheated if information are restricted unfairly.</p>
+										</div>
+										<div class="col-8 col-12-small" style="padding-left: 2em;">
+											<h3 class="major">The Solution</h3>
+											<p>As a technical designer, I prototyped a lot of the core mechanics in the game early AND quickly (within days): from the monitors to the crank, from levers to signing pads. Then I would present the prototype to the team, asking them for feedback and observing their playthroughs. Through this process, we were able to create a ranking of the mechanics by "fun-ness", allowing us to narrow down on the unqiue game feel and prioritize the core features that we ended up with.</p> 
+										</div>
+									</div>
 								</div>
 							</div>
 						</section>
 
 						<!-- Non-interactive Sequence -->
 						<section id="nis" class="wrapper alt spotlight style2">
-							<div class="inner">
-								<a class="image"><img src="compositing.png" alt="" /></a>
+							<div class="inner" style="text-align: left;">
 								<div class="content">
-									<h1 class="largest major">Non-interactive Sequence</h1>
-									<p>
-									</p>
+									<h1 class="largest major">Non-Interactive Sequences</h1>
+									<div class="row">
+										<div class="col-4 col-12-small" style="padding-right: 2em;">
+											<h3 class="major">The Problem</h3>
+											<p>In our game, a lot of things happen at the same time. So what if the player misses something crucial to their playthrough that we want them to see?</p>
+											<p>We also want the system to be designer-friendly so they can change or add without requiring help from programmers.</p>
+										</div>
+										<div class="col-8 col-12-small" style="padding-left: 2em;">
+											<h3 class="major">The Solution</h3>
+											<p>To make sure players don't miss certain gameplay moments, I designed and implemented a non-interactive sequence system, where player control will be taken away and the first person camera will be controlled by the system instead.</p>
+											<p>Sequences are implemented using timelines to allow designers to easily tweak the timings of events. The system listens to event to trigger specific sequences, allowing this system to be decoupled from other gameplay systems. Using Unity's <a href="https://docs.unity3d.com/Manual/Playables.html" target="_blank">Playables</a>, multiple custom tracks are also created to support custom behaviors during the sequence, e.g. panning or zooming FPS camera, running coroutines and triggering other events</p>
+											<div class="image-container">
+												<img src="nis_timeline.png" alt="" />
+												<figcaption>Non-interactive sequence in Timeline</figcaption>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
 						</section>
 						
 						<!-- Generic State machine -->
-						<section id="statemachine" class="wrapper spotlight style3">
+						<!-- <section id="statemachine" class="wrapper spotlight style3">
 							<div class="inner">
 								<div class="content">
 									<h1 class="largest major">Generic State Machine</h1>
@@ -121,7 +142,7 @@
 									</p>
 								</div>
 							</div>
-						</section>
+						</section> -->
 
 						
 						<!-- Other cool stuff -->
@@ -218,7 +239,6 @@
 										Amazing 2D Art by <a href="https://www.artstation.com/the36thguillotine" target="_blank">Evan Oldham</a>
 									</p>
 								</div>
-								
 							</div>
 						</section>
 					</section>
